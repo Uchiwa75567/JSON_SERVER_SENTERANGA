@@ -1,0 +1,825 @@
+{
+  "regions": [
+    {
+      "id": "dakar",
+      "name": "Dakar",
+      "departements": [
+        "Dakar",
+        "Guédiawaye",
+        "Keur Massar",
+        "Pikine",
+        "Rufisque"
+      ]
+    },
+    {
+      "id": "thies",
+      "name": "Thiès",
+      "departements": [
+        "Thiès",
+        "Mbour",
+        "Kébémer",
+        "Tivaouane"
+      ]
+    },
+    {
+      "id": "saint-louis",
+      "name": "Saint-Louis",
+      "departements": [
+        "Saint-Louis",
+        "Dagana",
+        "Podor"
+      ]
+    },
+    {
+      "id": "kaolack",
+      "name": "Kaolack",
+      "departements": [
+        "Kaolack",
+        "Guinguinéo",
+        "Nioro du Rip"
+      ]
+    },
+    {
+      "id": "ziguinchor",
+      "name": "Ziguinchor",
+      "departements": [
+        "Ziguinchor",
+        "Bignona",
+        "Oussouye"
+      ]
+    },
+    {
+      "id": "louga",
+      "name": "Louga",
+      "departements": [
+        "Louga",
+        "Kébémer",
+        "Linguère"
+      ]
+    },
+    {
+      "id": "matam",
+      "name": "Matam",
+      "departements": [
+        "Matam",
+        "Kanel",
+        "Ranérou"
+      ]
+    },
+    {
+      "id": "kolda",
+      "name": "Kolda",
+      "departements": [
+        "Kolda",
+        "Médina Yoro Foulah",
+        "Vélingara"
+      ]
+    },
+    {
+      "id": "tambacounda",
+      "name": "Tambacounda",
+      "departements": [
+        "Tambacounda",
+        "Bakel",
+        "Goudiry",
+        "Koumpentoum"
+      ]
+    },
+    {
+      "id": "fatick",
+      "name": "Fatick",
+      "departements": [
+        "Fatick",
+        "Foundiougne",
+        "Gossas"
+      ]
+    },
+    {
+      "id": "kaffrine",
+      "name": "Kaffrine",
+      "departements": [
+        "Kaffrine",
+        "Birkelane",
+        "Koungheul",
+        "Malem Hodar"
+      ]
+    },
+    {
+      "id": "kedougou",
+      "name": "Kédougou",
+      "departements": [
+        "Kédougou",
+        "Salemata",
+        "Saraya"
+      ]
+    },
+    {
+      "id": "sedhiou",
+      "name": "Sédhiou",
+      "departements": [
+        "Sédhiou",
+        "Bounkiling",
+        "Goudomp"
+      ]
+    },
+    {
+      "id": "diourbel",
+      "name": "Diourbel",
+      "departements": [
+        "Diourbel",
+        "Bambey",
+        "Mbacké"
+      ]
+    }
+  ],
+  "userTypes": [
+    {
+      "id": "agriculteur",
+      "name": "Agriculteur/Producteur",
+      "description": "Producteurs agricoles, éleveurs, pêcheurs",
+      "icon": "🌾",
+      "requiredFields": [
+        "region",
+        "departement",
+        "village",
+        "idCard"
+      ],
+      "dashboard": "/dashboard-agriculteur"
+    },
+    {
+      "id": "client",
+      "name": "Client Acheteur",
+      "description": "Particuliers, commerçants, grossistes",
+      "icon": "🛒",
+      "requiredFields": [
+        "clientType",
+        "idCard"
+      ],
+      "dashboard": "/dashboard-client"
+    },
+    {
+      "id": "admin",
+      "name": "Administrateur",
+      "description": "Gestionnaire de la plateforme",
+      "icon": "👑",
+      "requiredFields": [
+        "adminCode",
+        "department"
+      ],
+      "dashboard": "/dashboard-admin"
+    },
+    {
+      "id": "investisseur",
+      "name": "Investisseur Agricole",
+      "description": "Investisseurs particuliers ou entreprises",
+      "icon": "💰",
+      "requiredFields": [
+        "email",
+        "investorType",
+        "montantInvestissement"
+      ],
+      "dashboard": "/dashboard-investisseur"
+    },
+    {
+      "id": "agronome",
+      "name": "Agronome/Conseiller",
+      "description": "Conseillers agricoles, techniciens, ONG",
+      "icon": "👨‍🔬",
+      "requiredFields": [
+        "emailPro",
+        "structure",
+        "regionsIntervention",
+        "idCard"
+      ],
+      "dashboard": "/dashboard-agronome"
+    },
+    {
+      "id": "agent-terrain",
+      "name": "Agent Terrain",
+      "description": "Agents de vérification sur le terrain",
+      "icon": "🔍",
+      "requiredFields": [
+        "agentCode",
+        "region",
+        "department",
+        "idCard"
+      ],
+      "dashboard": "/dashboard-agent-terrain"
+    },
+    {
+      "id": "etat",
+      "name": "État (Gouvernement)",
+      "description": "Représentants gouvernementaux",
+      "icon": "🏛️",
+      "requiredFields": [
+        "governmentId",
+        "ministry",
+        "department"
+      ],
+      "dashboard": "/dashboard-etat"
+    }
+  ],
+  "clientTypes": [
+    {
+      "id": "famille",
+      "name": "Moi / ma famille",
+      "description": "Achat pour usage personnel"
+    },
+    {
+      "id": "boutique",
+      "name": "Ma boutique / restaurant",
+      "description": "Commerce de détail"
+    },
+    {
+      "id": "commerce",
+      "name": "Mon commerce en gros",
+      "description": "Commerce de gros"
+    }
+  ],
+  "investorTypes": [
+    {
+      "id": "particulier",
+      "name": "Particulier",
+      "description": "Investisseur individuel"
+    },
+    {
+      "id": "entreprise",
+      "name": "Entreprise / Fonds",
+      "description": "Société ou fonds d'investissement"
+    }
+  ],
+  "ministries": [
+    {
+      "id": "agriculture",
+      "name": "Ministère de l'Agriculture"
+    },
+    {
+      "id": "economie",
+      "name": "Ministère de l'Économie"
+    },
+    {
+      "id": "finances",
+      "name": "Ministère des Finances"
+    },
+    {
+      "id": "commerce",
+      "name": "Ministère du Commerce"
+    }
+  ],
+  "structures": [
+    {
+      "id": "ancar",
+      "name": "ANCAR (Agence Nationale de Conseil Agricole et Rural)"
+    },
+    {
+      "id": "saed",
+      "name": "SAED (Société Africaine d'Expansion Agricole)"
+    },
+    {
+      "id": "ong",
+      "name": "ONG Internationale"
+    },
+    {
+      "id": "projet-gov",
+      "name": "Projet gouvernemental"
+    },
+    {
+      "id": "universite",
+      "name": "Université/Institut de recherche"
+    },
+    {
+      "id": "autre",
+      "name": "Autre"
+    }
+  ],
+  "certifications": [
+    {
+      "id": "bio",
+      "name": "Agriculture Biologique",
+      "icon": "🌱"
+    },
+    {
+      "id": "rouge",
+      "name": "Label Rouge",
+      "icon": "🏷️"
+    },
+    {
+      "id": "aoc",
+      "name": "Appellation d'Origine Contrôlée",
+      "icon": "⭐"
+    },
+    {
+      "id": "igp",
+      "name": "Indication Géographique Protégée",
+      "icon": "🗺️"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Tomates Précoces",
+      "category": "Légumes",
+      "type": "agricol",
+      "price": 300,
+      "unit": "kg",
+      "quantity": 500,
+      "producer": {
+        "id": "prod-1",
+        "name": "Modou Fall",
+        "region": "Fatick",
+        "rating": 4.5
+      },
+      "certifications": [
+        "bio"
+      ],
+      "images": [
+        "/images/products/tomatoes-fresh.jpg"
+      ],
+      "description": "Tomates fraîches de saison, cultivées sans pesticides",
+      "harvestDate": "2024-12-15",
+      "location": "Fatick, Sénégal",
+      "createdAt": "2024-12-01T10:00:00.000Z",
+      "updatedAt": "2024-12-01T10:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "name": "Mil Traditionnel",
+      "category": "Céréales",
+      "type": "agricol",
+      "price": 320,
+      "unit": "kg",
+      "quantity": 1000,
+      "producer": {
+        "id": "prod-2",
+        "name": "Fatou Sall",
+        "region": "Matam",
+        "rating": 4.8
+      },
+      "certifications": [
+        "bio",
+        "igp"
+      ],
+      "images": [
+        "/images/products/millet-traditional.jpg"
+      ],
+      "description": "Mil de qualité supérieure, récolté manuellement",
+      "harvestDate": "2024-11-20",
+      "location": "Matam, Sénégal",
+      "createdAt": "2024-12-01T10:00:00.000Z",
+      "updatedAt": "2024-12-01T10:00:00.000Z"
+    },
+    {
+      "id": "prod-1764951391349",
+      "agriculteurId": "user-1764927626688",
+      "titre": "tomates rouges",
+      "description": "7638394004",
+      "categorie": "Légumes",
+      "quantite": 5000,
+      "quantiteMinimale": 23,
+      "prix": 1000000,
+      "prixParUnite": 200,
+      "unite": "kg",
+      "localisation": "Ville",
+      "images": [
+        "/images/products/tomatoes-fresh.jpg"
+      ],
+      "statutValidation": "validé",
+      "statutDisponibilite": "disponible",
+      "datePublication": "2025-12-05T16:16:31.349Z",
+      "dateMaj": "2025-12-05T16:41:59.470Z"
+    },
+    {
+      "id": "prod-1764982654553",
+      "agriculteurId": "user-1764927626688",
+      "titre": "ohoiuhi ihiuh",
+      "description": "iguoguyg",
+      "categorie": "Légumes",
+      "quantite": 36443,
+      "quantiteMinimale": 90,
+      "prix": 8964978,
+      "prixParUnite": 246,
+      "unite": "kg",
+      "localisation": "tftiyfi",
+      "images": [
+        "https://res.cloudinary.com/djha1kqvu/image/upload/v1764982653/senteranga_products/d5vqzfiqcz3kzxvnetgf.png"
+      ],
+      "statutValidation": "validé",
+      "statutDisponibilite": "disponible",
+      "datePublication": "2025-12-06T00:57:34.553Z",
+      "dateMaj": "2025-12-06T00:58:05.432Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "user-1764927626688",
+      "email": "",
+      "password": "123456",
+      "userType": "agriculteur",
+      "firstName": "Mamadou",
+      "lastName": "DIAME",
+      "phone": "785052217",
+      "region": "thies",
+      "department": "Thiès",
+      "village": "fouta",
+      "interventionRegions": [],
+      "isValidated": true,
+      "validationStatus": "approved",
+      "bankAccount": {
+        "bankName": "Banque mondiale",
+        "accountNumber": "1937200100168"
+      }
+    },
+    {
+      "id": "user-test-pending-1",
+      "email": "sitor@example.com",
+      "password": "123456",
+      "userType": "agriculteur",
+      "firstName": "Sitor",
+      "lastName": "Ba",
+      "phone": "781234567",
+      "region": "dakar",
+      "department": "Dakar",
+      "village": "Thiaroye",
+      "interventionRegions": [],
+      "isValidated": true,
+      "validationStatus": "approved"
+    },
+    {
+      "id": "user-test-pending-2",
+      "email": "marie@example.com",
+      "password": "123456",
+      "userType": "agriculteur",
+      "firstName": "Marie",
+      "lastName": "Ndiaye",
+      "phone": "782345678",
+      "region": "thies",
+      "department": "Thiès",
+      "village": "Saly",
+      "interventionRegions": [],
+      "isValidated": false,
+      "validationStatus": "rejected"
+    },
+    {
+      "id": "user-admin-1",
+      "email": "admin@senteranga.local",
+      "password": "111111",
+      "userType": "admin",
+      "firstName": "Mamadou",
+      "lastName": "Sarr",
+      "phone": "701234567",
+      "region": "dakar",
+      "department": "Dakar",
+      "village": "",
+      "interventionRegions": [],
+      "isValidated": true,
+      "validationStatus": "approved",
+      "adminCode": "ADM001"
+    }
+  ],
+  "officialPrices": [
+    {
+      "id": "1",
+      "product": "Mil",
+      "unit": "kg",
+      "price": 350,
+      "date": "2024-12-01",
+      "region": "National",
+      "createdAt": "2024-12-01T10:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "product": "Arachide",
+      "unit": "kg",
+      "price": 1200,
+      "date": "2024-12-01",
+      "region": "National",
+      "createdAt": "2024-12-01T10:00:00.000Z"
+    },
+    {
+      "id": "3",
+      "product": "Tomates",
+      "unit": "kg",
+      "price": 250,
+      "date": "2024-12-01",
+      "region": "National",
+      "createdAt": "2024-12-01T10:00:00.000Z"
+    }
+  ],
+  "subventions": [
+    {
+      "id": "sub-1",
+      "name": "Subvention Semences 2024",
+      "description": "Aide pour l'achat de semences améliorées",
+      "amount": 50000,
+      "eligibility": "Agriculteurs avec moins de 5 hectares",
+      "deadline": "2024-12-31",
+      "status": "active",
+      "createdAt": "2024-12-01T10:00:00.000Z"
+    },
+    {
+      "id": "sub-2",
+      "name": "Subvention Matériel Agricole",
+      "description": "Aide pour l'achat d'équipements agricoles",
+      "amount": 200000,
+      "eligibility": "Tous les agriculteurs",
+      "deadline": "2025-01-15",
+      "status": "active",
+      "createdAt": "2024-12-01T10:00:00.000Z"
+    }
+  ],
+  "investmentOpportunities": [
+    {
+      "id": "inv-1",
+      "farmer": {
+        "id": "prod-1",
+        "name": "Modou Fall",
+        "region": "Fatick"
+      },
+      "project": "Extension de production maraîchère",
+      "description": "Besoin de 2 millions pour étendre la production de légumes",
+      "amountNeeded": 2000000,
+      "amountRaised": 500000,
+      "roi": "25%",
+      "duration": "3 ans",
+      "status": "active",
+      "createdAt": "2024-12-01T10:00:00.000Z"
+    }
+  ],
+  "agronomeAlerts": [
+    {
+      "id": "alert-1",
+      "title": "Alerte Sècheresse",
+      "message": "Risque de sècheresse dans les régions de l'Est. Préparez vos cultures.",
+      "regions": [
+        "Tambacounda",
+        "Kédougou",
+        "Matam"
+      ],
+      "severity": "high",
+      "date": "2024-12-04",
+      "createdAt": "2024-12-04T10:00:00.000Z"
+    },
+    {
+      "id": "alert-2",
+      "title": "Conseil Fertilisation",
+      "message": "Période idéale pour la fertilisation des cultures de mil.",
+      "regions": [
+        "National"
+      ],
+      "severity": "medium",
+      "date": "2024-12-03",
+      "createdAt": "2024-12-03T10:00:00.000Z"
+    }
+  ],
+  "policies": [
+    {
+      "id": "pol-1",
+      "title": "Politique Agricole 2025",
+      "content": "La politique agricole 2025 vise à moderniser l'agriculture sénégalaise...",
+      "category": "Politique générale",
+      "date": "2024-11-15",
+      "author": "Ministère de l'Agriculture",
+      "createdAt": "2024-11-15T10:00:00.000Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-1",
+      "userId": "user-agr-1",
+      "type": "order",
+      "title": "Nouvelle commande",
+      "message": "Vous avez reçu une commande de 50kg de tomates",
+      "date": "2024-12-04T10:30:00Z",
+      "read": false,
+      "createdAt": "2024-12-04T10:30:00.000Z"
+    },
+    {
+      "id": "notif-2",
+      "userId": "user-agr-1",
+      "type": "validation",
+      "title": "Annonce validée",
+      "message": "Votre annonce de mil a été validée et publiée",
+      "date": "2024-12-03T14:20:00Z",
+      "read": true,
+      "createdAt": "2024-12-03T14:20:00.000Z"
+    },
+    {
+      "id": "notif-1764929363887",
+      "userId": "user-1764927626688",
+      "type": "validation",
+      "title": "Compte approuvé",
+      "message": "Votre compte a été approuvé par l'administration SENTERANGA.",
+      "date": "2025-12-05T10:09:23.887Z",
+      "read": true,
+      "createdAt": "2025-12-05T10:09:23.887Z"
+    },
+    {
+      "id": "notif-1764929365526",
+      "userId": "user-1764927626688",
+      "type": "validation",
+      "title": "Compte approuvé",
+      "message": "Votre compte a été approuvé par l'administration SENTERANGA.",
+      "date": "2025-12-05T10:09:25.526Z",
+      "read": true,
+      "createdAt": "2025-12-05T10:09:25.526Z"
+    },
+    {
+      "id": "notif-1764929366330",
+      "userId": "user-1764927626688",
+      "type": "validation",
+      "title": "Compte approuvé",
+      "message": "Votre compte a été approuvé par l'administration SENTERANGA.",
+      "date": "2025-12-05T10:09:26.330Z",
+      "read": true,
+      "createdAt": "2025-12-05T10:09:26.330Z"
+    },
+    {
+      "id": "notif-1764929367158",
+      "userId": "user-1764927626688",
+      "type": "validation",
+      "title": "Compte approuvé",
+      "message": "Votre compte a été approuvé par l'administration SENTERANGA.",
+      "date": "2025-12-05T10:09:27.158Z",
+      "read": true,
+      "createdAt": "2025-12-05T10:09:27.158Z"
+    },
+    {
+      "id": "notif-1764929379419",
+      "userId": "user-1764927626688",
+      "type": "validation",
+      "title": "Compte approuvé",
+      "message": "Votre compte a été approuvé par l'administration SENTERANGA.",
+      "date": "2025-12-05T10:09:39.419Z",
+      "read": true,
+      "createdAt": "2025-12-05T10:09:39.419Z"
+    },
+    {
+      "id": "notif-1764931650596",
+      "userId": "user-1764927626688",
+      "type": "validation",
+      "title": "Compte approuvé",
+      "message": "Votre compte a été approuvé par l'administration SENTERANGA.",
+      "date": "2025-12-05T10:47:30.596Z",
+      "read": true,
+      "createdAt": "2025-12-05T10:47:30.596Z"
+    },
+    {
+      "id": "notif-1764932424055",
+      "userId": "user-test-pending-1",
+      "type": "validation",
+      "title": "Compte approuvé",
+      "message": "Votre compte a été approuvé par l'administration SENTERANGA. Vous pouvez maintenant vous connecter.",
+      "date": "2025-12-05T11:00:24.055Z",
+      "read": false,
+      "createdAt": "2025-12-05T11:00:24.055Z"
+    },
+    {
+      "id": "note-1764952919480",
+      "userId": "user-1764927626688",
+      "title": "Produit validé",
+      "message": "Votre produit « tomates rouges » a été validé et est maintenant visible sur le marché.",
+      "createdAt": "2025-12-05T16:41:59.480Z",
+      "read": true
+    },
+    {
+      "id": "notif-1764954748990",
+      "userId": "user-test-pending-2",
+      "type": "validation",
+      "title": "Compte rejeté",
+      "message": "Votre demande d'inscription a été rejetée. Contactez le support pour plus d'informations.",
+      "date": "2025-12-05T17:12:28.990Z",
+      "read": false,
+      "createdAt": "2025-12-05T17:12:28.990Z"
+    },
+    {
+      "id": "note-1764982685443",
+      "userId": "user-1764927626688",
+      "title": "Produit validé",
+      "message": "Votre produit « ohoiuhi ihiuh » a été validé et est maintenant visible sur le marché.",
+      "createdAt": "2025-12-06T00:58:05.443Z",
+      "read": false
+    }
+  ],
+  "seeds": [
+    {
+      "id": "1",
+      "name": "Riz NERICA",
+      "description": "Variété de riz haute rendement, adaptée au Sénégal",
+      "price": 5000,
+      "currency": "FCFA",
+      "unit": "kg",
+      "category": "cereales",
+      "region": "Thiès",
+      "supplier": "Institut Sénégalais de Recherche Agricole",
+      "certification": "certifié",
+      "quantity": 100,
+      "image": null
+    },
+    {
+      "id": "2",
+      "name": "Mil Souna",
+      "description": "Mil haute rendement, très productif",
+      "price": 3000,
+      "currency": "FCFA",
+      "unit": "kg",
+      "category": "cereales",
+      "region": "Kaolack",
+      "supplier": "ISRA",
+      "certification": "certifié",
+      "quantity": 150,
+      "image": null
+    },
+    {
+      "id": "3",
+      "name": "Arachide Icrisat",
+      "description": "Arachide de bonne qualité pour le commerce",
+      "price": 8000,
+      "currency": "FCFA",
+      "unit": "kg",
+      "category": "oleagineux",
+      "region": "Saint-Louis",
+      "supplier": "ICRISAT",
+      "certification": "certifié",
+      "quantity": 80,
+      "image": null
+    },
+    {
+      "id": "4",
+      "name": "Tomate Roma",
+      "description": "Tomate de qualité pour la transformation",
+      "price": 2000,
+      "currency": "FCFA",
+      "unit": "kg",
+      "category": "legumes",
+      "region": "Thiès",
+      "supplier": "Centre de Recherche Agricole",
+      "certification": "semi-certifié",
+      "quantity": 200,
+      "image": null
+    },
+    {
+      "id": "5",
+      "name": "Maïs ZA",
+      "description": "Maïs hybride adapté aux conditions sénégalaises",
+      "price": 6000,
+      "currency": "FCFA",
+      "unit": "kg",
+      "category": "cereales",
+      "region": "Kaolack",
+      "supplier": "SEMIS",
+      "certification": "certifié",
+      "quantity": 120,
+      "image": null
+    }
+  ],
+  "seedOrders": [
+    {
+      "id": "order-1",
+      "buyerId": "user-cli-1",
+      "sellerId": "user-agr-1",
+      "products": [
+        {
+          "productId": "1",
+          "quantity": 50,
+          "unitPrice": 300,
+          "total": 15000
+        }
+      ],
+      "totalAmount": 15000,
+      "shippingCost": 2000,
+      "status": "confirmed",
+      "orderDate": "2024-12-04T10:30:00Z",
+      "deliveryDate": "2024-12-06",
+      "createdAt": "2024-12-04T10:30:00.000Z"
+    },
+    {
+      "id": "order-1764979252655",
+      "userId": "user-1764927626688",
+      "seedId": "1",
+      "seedName": "Riz NERICA",
+      "quantity": 1,
+      "total": 5000,
+      "status": "paid",
+      "createdAt": "2025-12-06T00:00:52.655Z"
+    }
+  ],
+  "reports": {
+    "agriculturalStats": {
+      "totalFarmers": 500,
+      "totalProduction": 1000,
+      "regions": 14,
+      "activeProducts": 1250,
+      "monthlyGrowth": 8.5
+    },
+    "marketStats": {
+      "totalTransactions": 2500,
+      "totalValue": 150000000,
+      "averageOrderValue": 60000,
+      "topProducts": [
+        "Mil",
+        "Arachide",
+        "Tomates"
+      ]
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "senteranga-backend",
+  "version": "1.0.0",
+  "description": "JSON Server backend for SENTERANGA platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "keep-alive": "node keep-alive.js",
+    "keep-alive:test": "node keep-alive.js --test",
+    "keep-alive:bash": "./keep-alive-simple.sh",
+    "keep-alive:bash:test": "./keep-alive-simple.sh --test"
+  },
+  "keywords": [
+    "json-server",
+    "senteranga",
+    "backend"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "json-server": "^0.17.3",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
