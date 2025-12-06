@@ -841,22 +841,21 @@
         "Arachide",
         "Tomates"
       ]
-    },
-  
-    "reservations": [
-      {
-        "id": "reservation-1",
-        "productId": "1",
-        "productTitle": "Tomates Précoces",
-        "clientId": "user-123",
-        "clientName": "Client Test",
-        "clientEmail": "client@example.com",
-        "clientPhone": "771234567",
-        "agriculteurId": "user-agr-1",
-        "quantity": 50,
-        "reservationDate": "2024-12-06T10:30:00.000Z",
-        "status": "active"
-      }
-    ]
-  }
+    }
+  },
+  "reservations": [
+    {
+      "id": "reservation-1",
+      "productId": "1",
+      "productTitle": "Tomates Précoces",
+      "clientId": "user-123",
+      "clientName": "Client Test",
+      "clientEmail": "client@example.com",
+      "clientPhone": "771234567",
+      "agriculteurId": "user-agr-1",
+      "quantity": 50,
+      "reservationDate": "2024-12-06T10:30:00.000Z",
+      "status": "active"
+    }
+  ]
 }
