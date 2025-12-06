@@ -719,6 +719,16 @@
       "message": "Votre produit « ohoiuhi ihiuh » a été validé et est maintenant visible sur le marché.",
       "createdAt": "2025-12-06T00:58:05.443Z",
       "read": false
+    },
+    {
+      "id": "notif-1",
+      "userId": "user-agr-1",
+      "title": "Nouvelle réservation",
+      "message": "Client Test a réservé 50 Tomates Précoces",
+      "type": "reservation",
+      "read": false,
+      "createdAt": "2024-12-06T10:30:00.000Z",
+      "reservationId": "reservation-1"
     }
   ],
   "seeds": [
@@ -848,7 +858,7 @@
       "id": "reservation-1",
       "productId": "1",
       "productTitle": "Tomates Précoces",
-      "clientId": "user-123",
+      "clientId": "user-client-1",
       "clientName": "Client Test",
       "clientEmail": "client@example.com",
       "clientPhone": "771234567",
