@@ -339,7 +339,11 @@
       "harvestDate": "2024-12-15",
       "location": "Fatick, Sénégal",
       "createdAt": "2024-12-01T10:00:00.000Z",
-      "updatedAt": "2024-12-01T10:00:00.000Z"
+      "updatedAt": "2024-12-01T10:00:00.000Z",
+      "isAnnonce": true,
+      "periodeApproximativeDebut": "2025-03-01T00:00:00.000Z",
+      "periodeApproximativeFin": "2025-05-31T23:59:59.000Z",
+      "statutAnnonce": "validee"
     },
     {
       "id": "2",
@@ -474,6 +478,23 @@
       "isValidated": true,
       "validationStatus": "approved",
       "adminCode": "ADM001"
+    },
+    {
+      "id": "user-institution-1",
+      "email": "institution@senteranga.sn",
+      "password": "111111",
+      "userType": "etat",
+      "firstName": "Ministère",
+      "lastName": "Agriculture",
+      "phone": "768257601",
+      "region": "dakar",
+      "department": "Direction Générale",
+      "village": "",
+      "interventionRegions": [],
+      "isValidated": true,
+      "validationStatus": "approved",
+      "governmentId": "MIN_AGR_001",
+      "ministry": "agriculture"
     }
   ],
   "officialPrices": [
