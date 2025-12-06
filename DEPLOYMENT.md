@@ -73,26 +73,26 @@ Pour le plan gratuit Render :
 ### URL de l'API
 Votre API sera disponible à l'adresse :
 ```
-https://senteranga-backend.onrender.com
+https://json-server-senteranga.onrender.com
 ```
 
 ### Endpoints Disponibles
-- **Racine**: `https://senteranga-backend.onrender.com/`
-- **API JSON Server**: `https://senteranga-backend.onrender.com/api/`
+- **Racine**: `https://json-server-senteranga.onrender.com/`
+- **API JSON Server**: `https://json-server-senteranga.onrender.com/api/`
 
 ### Exemples d'Endpoints
 ```bash
 # Récupérer tous les utilisateurs
-GET https://senteranga-backend.onrender.com/api/users
+GET https://json-server-senteranga.onrender.com/api/users
 
 # Récupérer tous les produits
-GET https://senteranga-backend.onrender.com/api/products
+GET https://json-server-senteranga.onrender.com/api/products
 
 # Récupérer les régions
-GET https://senteranga-backend.onrender.com/api/regions
+GET https://json-server-senteranga.onrender.com/api/regions
 
 # Créer un nouvel utilisateur
-POST https://senteranga-backend.onrender.com/api/users
+POST https://json-server-senteranga.onrender.com/api/users
 ```
 
 ## 🔍 Surveillance et Logs
@@ -184,7 +184,7 @@ Les services gratuits Render se mettent en veille après **15 minutes d'inactivi
 1. Aller sur https://uptimerobot.com
 2. Créer un compte gratuit
 3. Ajouter un monitor HTTP(s)
-4. URL: `https://senteranga-backend.onrender.com`
+4. URL: `https://json-server-senteranga.onrender.com`
 5. Intervalle: 5 minutes
 6. Keyword: `SENTERANGA Backend API`
 
@@ -201,10 +201,10 @@ npm install node-cron
 npm run keep-alive:test
 
 # Démarrage continu
-npm run keep-alive https://senteranga-backend.onrender.com
+npm run keep-alive https://json-server-senteranga.onrender.com
 
 # En arrière-plan
-nohup npm run keep-alive https://senteranga-backend.onrender.com &
+nohup npm run keep-alive https://json-server-senteranga.onrender.com &
 ```
 
 ### Solution 3: Script Bash
@@ -217,13 +217,13 @@ chmod +x keep-alive-simple.sh
 **Utilisation :**
 ```bash
 # Test unique
-./keep-alive-simple.sh --test https://senteranga-backend.onrender.com
+./keep-alive-simple.sh --test https://json-server-senteranga.onrender.com
 
 # Démarrage continu
-./keep-alive-simple.sh https://senteranga-backend.onrender.com
+./keep-alive-simple.sh https://json-server-senteranga.onrender.com
 
 # En arrière-plan
-nohup ./keep-alive-simple.sh https://senteranga-backend.onrender.com &
+nohup ./keep-alive-simple.sh https://json-server-senteranga.onrender.com &
 ```
 
 ## 🔍 Test du Maintien en Vie
@@ -231,12 +231,12 @@ nohup ./keep-alive-simple.sh https://senteranga-backend.onrender.com &
 **Script de test :**
 ```bash
 chmod +x test-deployment.sh
-./test-deployment.sh https://senteranga-backend.onrender.com
+./test-deployment.sh https://json-server-senteranga.onrender.com
 ```
 
 **Test manuel :**
 ```bash
-curl https://senteranga-backend.onrender.com
+curl https://json-server-senteranga.onrender.com
 # Doit retourner une réponse JSON
 ```
 
@@ -267,6 +267,6 @@ Pour mettre à jour l'application :
 
 ---
 
-**URL Finale**: `https://senteranga-backend.onrender.com`
+**URL Finale**: `https://json-server-senteranga.onrender.com`
 **Date de création**: 2025-12-06
 **Solutions de maintien en vie**: ✅ Configurées

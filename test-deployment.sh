@@ -5,7 +5,7 @@
 
 if [ -z "$1" ]; then
     echo "❌ Usage: $0 <RENDER_APP_URL>"
-    echo "Exemple: $0 https://senteranga-backend.onrender.com"
+    echo "Exemple: $0 https://json-server-senteranga.onrender.com"
     exit 1
 fi
 

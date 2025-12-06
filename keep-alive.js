@@ -12,7 +12,7 @@ const https = require('https');
 const http = require('http');
 
 // Configuration
-const DEFAULT_URL = process.env.RENDER_URL || 'https://senteranga-backend.onrender.com';
+const DEFAULT_URL = process.env.RENDER_URL || 'https://json-server-senteranga.onrender.com';
 const PING_INTERVAL = '*/10 * * * *'; // Toutes les 10 minutes
 const TIMEOUT = 10000; // 10 secondes
 

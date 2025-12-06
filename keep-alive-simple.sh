@@ -4,10 +4,10 @@
 # Ping automatique toutes les 10 minutes pour éviter la mise en veille Render
 #
 # Utilisation: ./keep-alive-simple.sh [URL_DU_SERVEUR]
-# Exemple en arrière-plan: nohup ./keep-alive-simple.sh https://senteranga-backend.onrender.com &
+# Exemple en arrière-plan: nohup ./keep-alive-simple.sh https://json-server-senteranga.onrender.com &
 
 # Configuration par défaut
-DEFAULT_URL="https://senteranga-backend.onrender.com"
+DEFAULT_URL="https://json-server-senteranga.onrender.com"
 SERVER_URL="${1:-$DEFAULT_URL}"
 LOG_FILE="keep-alive.log"
 INTERVAL=600  # 10 minutes en secondes
@@ -54,9 +54,9 @@ show_help() {
     echo "  $0 --help                  # Afficher cette aide"
     echo ""
     echo "Exemples:"
-    echo "  $0 https://senteranga-backend.onrender.com"
-    echo "  $0 --test https://senteranga-backend.onrender.com"
-    echo "  nohup $0 https://senteranga-backend.onrender.com &"
+    echo "  $0 https://json-server-senteranga.onrender.com"
+    echo "  $0 --test https://json-server-senteranga.onrender.com"
+    echo "  nohup $0 https://json-server-senteranga.onrender.com &"
     echo ""
     echo "Configuration:"
     echo "  URL par défaut: $DEFAULT_URL"

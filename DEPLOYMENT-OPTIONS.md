@@ -23,7 +23,7 @@ Votre backend SENTERANGA peut être déployé sur plusieurs plateformes cloud. C
 
 **📖 Configuration :** Voir `DEPLOYMENT.md`
 
-**URL Type :** `https://senteranga-backend.onrender.com`
+**URL Type :** `https://json-server-senteranga.onrender.com`
 
 ---
 
@@ -228,7 +228,7 @@ PORT=10000
 CORS_ORIGIN=*
 
 # Optional
-RENDER_URL=https://senteranga-backend.onrender.com  # Old
+RENDER_URL=https://json-server-senteranga.onrender.com  # Old
 RAILWAY_URL=https://xxx.up.railway.app               # New
 ```
 

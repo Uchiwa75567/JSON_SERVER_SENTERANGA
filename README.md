@@ -37,7 +37,7 @@ Le serveur sera disponible à: `http://localhost:3004/api`
 
 Une fois déployé, l'API sera accessible à:
 ```
-https://votre-service-render.onrender.com/api
+https://json-server-senteranga.onrender.com/api
 ```
 
 **Collections principales:**
@@ -54,7 +54,7 @@ https://votre-service-render.onrender.com/api
 
 **data.service.ts:**
 ```typescript
-private apiUrl = 'https://votre-service-render.onrender.com/api';
+private apiUrl = 'https://json-server-senteranga.onrender.com/api';
 ```
 
 ### 5. Notes Importantes

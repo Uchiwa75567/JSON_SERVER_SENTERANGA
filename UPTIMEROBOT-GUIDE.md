@@ -28,7 +28,7 @@ UptimeRobot est un service de monitoring gratuit qui peut maintenir votre serveu
 
 2. **Type de Monitor** : **"HTTP(s)"**
 
-3. **URL** : `https://senteranga-backend.onrender.com`
+3. **URL** : `https://json-server-senteranga.onrender.com`
 
 4. **Monitoring Interval** : **"5 Minutes"** ⚠️ **Important pour Render**
 
@@ -48,7 +48,7 @@ UptimeRobot est un service de monitoring gratuit qui peut maintenir votre serveu
 ```
 Monitor Settings:
 ├── Monitor Type: HTTP(s)
-├── URL: https://senteranga-backend.onrender.com
+├── URL: https://json-server-senteranga.onrender.com
 ├── Monitoring Interval: 5 minutes
 ├── Timeout: 30 seconds
 ├── HTTP Method: GET
@@ -61,15 +61,15 @@ Monitor Settings:
 **API Endpoints à monitorer :**
 
 1. **Monitor Principal** :
-   - URL: `https://senteranga-backend.onrender.com`
+   - URL: `https://json-server-senteranga.onrender.com`
    - Keyword: `SENTERANGA Backend API`
 
 2. **Monitor API Users** :
-   - URL: `https://senteranga-backend.onrender.com/api/users`
+   - URL: `https://json-server-senteranga.onrender.com/api/users`
    - Keyword: `[`
 
 3. **Monitor API Products** :
-   - URL: `https://senteranga-backend.onrender.com/api/products`
+   - URL: `https://json-server-senteranga.onrender.com/api/products`
    - Keyword: `[`
 
 ## 📱 Configuration des Alertes
@@ -122,11 +122,11 @@ Pour une surveillance complète, ajouter ces monitors :
 
 ```
 Monitors List:
-1. Root: https://senteranga-backend.onrender.com
-2. API: https://senteranga-backend.onrender.com/api/
-3. Users: https://senteranga-backend.onrender.com/api/users
-4. Products: https://senteranga-backend.onrender.com/api/products
-5. Regions: https://senteranga-backend.onrender.com/api/regions
+1. Root: https://json-server-senteranga.onrender.com
+2. API: https://json-server-senteranga.onrender.com/api/
+3. Users: https://json-server-senteranga.onrender.com/api/users
+4. Products: https://json-server-senteranga.onrender.com/api/products
+5. Regions: https://json-server-senteranga.onrender.com/api/regions
 ```
 
 ### Paramètres Recommandés
@@ -147,7 +147,7 @@ Pour automatiser la configuration :
 # Créer un monitor via API
 curl -X POST "https://api.uptimerobot.com/v2/newMonitor" \
   -H "Content-Type: application/x-www-form-urlencoded" \
-  -d "api_key=VOTRE_API_KEY&format=json&type=1&url=https://senteranga-backend.onrender.com&keyword=API&interval=300"
+  -d "api_key=VOTRE_API_KEY&format=json&type=1&url=https://json-server-senteranga.onrender.com&keyword=API&interval=300"
 ```
 
 ## 🔍 Test et Validation
@@ -168,7 +168,7 @@ curl -X POST "https://api.uptimerobot.com/v2/newMonitor" \
 
 ```bash
 # Test manuel avec curl
-curl https://senteranga-backend.onrender.com
+curl https://json-server-senteranga.onrender.com
 # Doit retourner la réponse de l'API
 ```
 
@@ -192,7 +192,7 @@ curl https://senteranga-backend.onrender.com
 
 1. **Vérifier l'URL** :
    ```bash
-   curl -I https://senteranga-backend.onrender.com
+   curl -I https://json-server-senteranga.onrender.com
    ```
 
 2. **Vérifier le Keyword** :
