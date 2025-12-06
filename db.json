@@ -343,7 +343,9 @@
       "isAnnonce": true,
       "periodeApproximativeDebut": "2025-03-01T00:00:00.000Z",
       "periodeApproximativeFin": "2025-05-31T23:59:59.000Z",
-      "statutAnnonce": "validee"
+      "statutAnnonce": "validee",
+      "statutValidation": "validé",
+      "statutDisponibilite": "annoncé"
     },
     {
       "id": "2",
