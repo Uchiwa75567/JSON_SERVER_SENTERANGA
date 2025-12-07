@@ -6,8 +6,10 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "keep-alive": "node keep-alive.js",
-    "keep-alive:test": "node keep-alive.js --test",
+    "keep-alive": "node keep-render-alive.js",
+    "keep-alive:test": "node keep-render-alive.js --test",
+    "keep-alive:render": "node keep-render-alive.js https://json-server-senteranga.onrender.com",
+    "keep-alive:old": "node keep-alive.js",
     "keep-alive:bash": "./keep-alive-simple.sh",
     "keep-alive:bash:test": "./keep-alive-simple.sh --test"
   },
