@@ -377,7 +377,7 @@
       "periodeApproximativeDebut": null,
       "periodeApproximativeFin": null,
       "statutValidation": "validé",
-      "statutDisponibilite": "disponible"
+      "statutDisponibilite": "dispominible"
     },
     {
       "id": "prod-1764951391349",
@@ -557,24 +557,6 @@
       "amount": 200000,
       "eligibility": "Tous les agriculteurs",
       "deadline": "2025-01-15",
-      "status": "active",
-      "createdAt": "2024-12-01T10:00:00.000Z"
-    }
-  ],
-  "investmentOpportunities": [
-    {
-      "id": "inv-1",
-      "farmer": {
-        "id": "prod-1",
-        "name": "Modou Fall",
-        "region": "Fatick"
-      },
-      "project": "Extension de production maraîchère",
-      "description": "Besoin de 2 millions pour étendre la production de légumes",
-      "amountNeeded": 2000000,
-      "amountRaised": 500000,
-      "roi": "25%",
-      "duration": "3 ans",
       "status": "active",
       "createdAt": "2024-12-01T10:00:00.000Z"
     }
@@ -880,5 +862,111 @@
       "reservationDate": "2024-12-06T10:30:00.000Z",
       "status": "active"
     }
-  ]
+  ],
+  "investmentOpportunities": [
+    {
+      "id": "inv-opp-1",
+      "farmer": {
+        "id": "user-1764927626688",
+        "name": "Modou Fall",
+        "region": "Fatick"
+      },
+      "project": "Extension de production maraîchère",
+      "projectType": "Extension de production",
+      "description": "Besoin de financement pour étendre la production de légumes sur 2 hectares supplémentaires. Installation d'un système d'irrigation goutte à goutte et achat de semences améliorées.",
+      "amountNeeded": 2000000,
+      "amountRaised": 500000,
+      "roi": "25%",
+      "duration": "3 ans",
+      "status": "active",
+      "createdAt": "2024-12-01T10:00:00.000Z"
+    },
+    {
+      "id": "inv-opp-2",
+      "farmer": {
+        "id": "user-test-pending-1",
+        "name": "Awa Diop",
+        "region": "Thiès"
+      },
+      "project": "Achat d'équipement de transformation",
+      "projectType": "Achat d'équipement",
+      "description": "Acquisition d'une machine de transformation de fruits pour la production de jus et confitures. Permettra de valoriser la production locale et créer de l'emploi.",
+      "amountNeeded": 3500000,
+      "amountRaised": 1200000,
+      "roi": "30%",
+      "duration": "4 ans",
+      "status": "active",
+      "createdAt": "2024-11-28T14:30:00.000Z"
+    },
+    {
+      "id": "inv-opp-3",
+      "farmer": {
+        "id": "user-1764927626688",
+        "name": "Mamadou Sarr",
+        "region": "Kaolack"
+      },
+      "project": "Installation système d'irrigation solaire",
+      "projectType": "Irrigation",
+      "description": "Installation d'un système d'irrigation alimenté par panneaux solaires pour sécuriser la production pendant la saison sèche. Couvrira 5 hectares de cultures maraîchères.",
+      "amountNeeded": 4000000,
+      "amountRaised": 800000,
+      "roi": "28%",
+      "duration": "5 ans",
+      "status": "active",
+      "createdAt": "2024-11-25T09:15:00.000Z"
+    },
+    {
+      "id": "inv-opp-4",
+      "farmer": {
+        "id": "user-test-pending-2",
+        "name": "Fatou Sall",
+        "region": "Matam"
+      },
+      "project": "Construction d'un entrepôt de stockage",
+      "projectType": "Stockage",
+      "description": "Construction d'un entrepôt moderne de 200m² pour le stockage des céréales avec système de ventilation. Réduira les pertes post-récolte de 40%.",
+      "amountNeeded": 5000000,
+      "amountRaised": 2500000,
+      "roi": "22%",
+      "duration": "6 ans",
+      "status": "active",
+      "createdAt": "2024-11-20T11:45:00.000Z"
+    },
+    {
+      "id": "inv-opp-5",
+      "farmer": {
+        "id": "user-1764927626688",
+        "name": "Ibrahima Ndiaye",
+        "region": "Saint-Louis"
+      },
+      "project": "Achat de véhicule de transport",
+      "projectType": "Transport",
+      "description": "Acquisition d'un camion frigorifique pour le transport des produits maraîchers vers Dakar. Permettra de réduire les coûts de transport de 35%.",
+      "amountNeeded": 6000000,
+      "amountRaised": 1500000,
+      "roi": "20%",
+      "duration": "5 ans",
+      "status": "active",
+      "createdAt": "2024-11-15T16:20:00.000Z"
+    },
+    {
+      "id": "inv-opp-6",
+      "farmer": {
+        "id": "user-test-pending-1",
+        "name": "Aminata Ba",
+        "region": "Ziguinchor"
+      },
+      "project": "Développement de la riziculture",
+      "projectType": "Extension de production",
+      "description": "Extension des rizières de 3 hectares avec aménagement hydro-agricole. Production estimée à 12 tonnes de riz paddy par an.",
+      "amountNeeded": 3000000,
+      "amountRaised": 900000,
+      "roi": "27%",
+      "duration": "4 ans",
+      "status": "active",
+      "createdAt": "2024-11-10T13:00:00.000Z"
+    }
+  ],
+  "investmentRequests": [],
+  "negotiationMessages": []
 }
