@@ -349,7 +349,7 @@
     },
     {
       "id": "2",
-      "name": "Mil Traditionnel",
+      "titre": "Mil Traditionnel",
       "category": "Céréales",
       "type": "agricol",
       "price": 320,
@@ -377,7 +377,7 @@
       "periodeApproximativeDebut": null,
       "periodeApproximativeFin": null,
       "statutValidation": "validé",
-      "statutDisponibilite": "dispominible"
+      "statutDisponibilite": "disponible"
     },
     {
       "id": "prod-1764951391349",
@@ -637,27 +637,58 @@
   "agronomeAlerts": [
     {
       "id": "alert-1",
-      "title": "Alerte Sècheresse",
-      "message": "Risque de sècheresse dans les régions de l'Est. Préparez vos cultures.",
-      "regions": [
-        "Tambacounda",
-        "Kédougou",
-        "Matam"
-      ],
+      "agronomeId": "user-agronome-1",
+      "agronomeName": "Dr. Ibrahima Ndiaye",
+      "title": "Alerte Sécheresse",
+      "message": "Risque de sécheresse dans les régions de l'Est. Préparez vos cultures et optimisez l'irrigation.",
+      "category": "Météo et Climat",
       "severity": "high",
-      "date": "2024-12-04",
-      "createdAt": "2024-12-04T10:00:00.000Z"
+      "targetRegions": ["Tambacounda", "Kédougou", "Matam"],
+      "targetCultures": ["Toutes cultures"],
+      "createdAt": "2024-12-04T10:00:00.000Z",
+      "expiresAt": "2024-12-11T10:00:00.000Z"
     },
     {
       "id": "alert-2",
+      "agronomeId": "user-agronome-1",
+      "agronomeName": "Dr. Ibrahima Ndiaye",
       "title": "Conseil Fertilisation",
-      "message": "Période idéale pour la fertilisation des cultures de mil.",
-      "regions": [
-        "National"
-      ],
+      "message": "Période idéale pour la fertilisation des cultures de mil. Utilisez des engrais organiques pour de meilleurs rendements.",
+      "category": "Fertilisation",
       "severity": "medium",
-      "date": "2024-12-03",
+      "targetRegions": ["National"],
+      "targetCultures": ["Céréales"],
       "createdAt": "2024-12-03T10:00:00.000Z"
+    }
+  ],
+  "verificationReports": [
+    {
+      "id": "report-1",
+      "agentId": "user-agent-terrain-1",
+      "agentName": "Moussa Ba",
+      "farmerId": "user-1764927626688",
+      "farmerName": "Mamadou DIAME",
+      "verificationType": "farm_visit",
+      "status": "verified",
+      "location": "Thiès, Sénégal",
+      "notes": "Exploitation conforme aux normes. Cultures en bon état. Système d'irrigation fonctionnel.",
+      "photos": [],
+      "gpsCoordinates": { "lat": 14.7892, "lng": -16.9401 },
+      "createdAt": "2024-12-05T10:00:00.000Z"
+    },
+    {
+      "id": "report-2",
+      "agentId": "user-agent-terrain-1",
+      "agentName": "Moussa Ba",
+      "farmerId": "user-test-pending-1",
+      "farmerName": "Sitor Ba",
+      "verificationType": "harvest_verification",
+      "status": "verified",
+      "location": "Dakar, Thiaroye",
+      "notes": "Récolte de tomates conforme à l'annonce. Qualité excellente.",
+      "photos": [],
+      "gpsCoordinates": { "lat": 14.7645, "lng": -17.3660 },
+      "createdAt": "2024-12-04T14:30:00.000Z"
     }
   ],
   "policies": [
