@@ -531,6 +531,56 @@
         "bankName": "SGBS",
         "accountNumber": "2024001234567"
       }
+    },
+    {
+      "id": "user-client-1",
+      "email": "client@senteranga.sn",
+      "password": "654321",
+      "userType": "client",
+      "firstName": "Ousmane",
+      "lastName": "Diop",
+      "phone": "777123456",
+      "clientType": "boutique",
+      "region": "dakar",
+      "department": "Dakar",
+      "village": "",
+      "interventionRegions": [],
+      "isValidated": true,
+      "validationStatus": "approved"
+    },
+    {
+      "id": "user-agronome-1",
+      "email": "agronome@senteranga.sn",
+      "password": "789456",
+      "userType": "agronome",
+      "firstName": "Dr. Ibrahima",
+      "lastName": "Ndiaye",
+      "phone": "778234567",
+      "emailPro": "agronome@senteranga.sn",
+      "structure": "ancar",
+      "regionsIntervention": ["dakar", "thies", "fatick"],
+      "region": "dakar",
+      "department": "Dakar",
+      "village": "",
+      "interventionRegions": ["dakar", "thies", "fatick"],
+      "isValidated": true,
+      "validationStatus": "approved"
+    },
+    {
+      "id": "user-agent-terrain-1",
+      "email": "agent@senteranga.sn",
+      "password": "456789",
+      "userType": "agent-terrain",
+      "firstName": "Moussa",
+      "lastName": "Ba",
+      "phone": "779345678",
+      "agentCode": "AGT001",
+      "region": "thies",
+      "department": "Thiès",
+      "village": "Mbour",
+      "interventionRegions": [],
+      "isValidated": true,
+      "validationStatus": "approved"
     }
   ],
   "officialPrices": [
