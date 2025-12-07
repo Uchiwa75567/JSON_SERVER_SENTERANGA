@@ -317,7 +317,7 @@
   "products": [
     {
       "id": "1",
-      "name": "Tomates Précoces",
+      "titre": "Tomates Précoces",
       "category": "Légumes",
       "type": "agricol",
       "price": 300,
@@ -372,7 +372,12 @@
       "harvestDate": "2024-11-20",
       "location": "Matam, Sénégal",
       "createdAt": "2024-12-01T10:00:00.000Z",
-      "updatedAt": "2024-12-01T10:00:00.000Z"
+      "updatedAt": "2024-12-01T10:00:00.000Z",
+      "isAnnonce": false,
+      "periodeApproximativeDebut": null,
+      "periodeApproximativeFin": null,
+      "statutValidation": "validé",
+      "statutDisponibilite": "disponible"
     },
     {
       "id": "prod-1764951391349",
@@ -391,6 +396,9 @@
       ],
       "statutValidation": "validé",
       "statutDisponibilite": "disponible",
+      "isAnnonce": false,
+      "periodeApproximativeDebut": null,
+      "periodeApproximativeFin": null,
       "datePublication": "2025-12-05T16:16:31.349Z",
       "dateMaj": "2025-12-05T16:41:59.470Z"
     },
@@ -411,6 +419,9 @@
       ],
       "statutValidation": "validé",
       "statutDisponibilite": "disponible",
+      "isAnnonce": false,
+      "periodeApproximativeDebut": null,
+      "periodeApproximativeFin": null,
       "datePublication": "2025-12-06T00:57:34.553Z",
       "dateMaj": "2025-12-06T00:58:05.432Z"
     }
