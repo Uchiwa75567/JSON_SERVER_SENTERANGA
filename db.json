@@ -508,6 +508,29 @@
       "validationStatus": "approved",
       "governmentId": "MIN_AGR_001",
       "ministry": "agriculture"
+    },
+    {
+      "id": "user-investor-1",
+      "email": "investor@senteranga.sn",
+      "password": "Invest@2025",
+      "userType": "investisseur",
+      "firstName": "Alassane",
+      "lastName": "Diallo",
+      "phone": "776543210",
+      "investorType": "entreprise",
+      "montantInvestissement": 50000000,
+      "region": "dakar",
+      "department": "Dakar",
+      "village": "",
+      "interventionRegions": [],
+      "isValidated": true,
+      "validationStatus": "approved",
+      "companyName": "Diallo Investments SARL",
+      "companyRegistration": "RC-2024-001234",
+      "bankAccount": {
+        "bankName": "SGBS",
+        "accountNumber": "2024001234567"
+      }
     }
   ],
   "officialPrices": [
